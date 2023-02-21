@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------------------
+resetCSS
+----------------------------------------*/
+html,
+body,
+div,
+span,
+img,
+h1,
+h2,
+h3,
+p,
+a,
+strong,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+img {
+  vertical-align: bottom;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+/*--clearfix----------------------------*/
+.clearfix:after {
+  content: "*";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+*html .clearfix {
+  height: 1px;
+}
+/*--End resetCSS------------------------*/
+
+/*--Colors------------------------*/
+:root {
+  --text-color-1: #000000;
+  --border-color-1: #d00f2b;
+  --background-color-1: #f4f4f4;
+}
+/*--Colors------------------------*/
+
+/*--styleCSS------------------------*/
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 760px;
+  width: 100%;
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__main .navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.header__main .navbar .nav-item {
+  cursor: pointer;
+  width: 20%;
+}
+
+.information {
+  margin-top: 40px;
+}
+
+.information .information__main {
+  display: flex;
+  gap: 50px;
+}
+
+.information .left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 22%;
+}
+
+.information .right-content .title {
+  color: var(--text-color-1);
+  border-left: 6px solid var(--border-color-1);
+  background-color: var(--background-color-1);
+  margin-bottom: 2px;
+  padding: 8px;
+}
+
+.information .right-content .description {
+  color: var(--text-color-1);
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: var(--background-color-1);
+}
+
+/*--End styleCSS------------------------*/
